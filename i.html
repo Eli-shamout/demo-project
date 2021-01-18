@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #s{
+                width:500px;
+                height:0px;
+                background-color: aquamarine;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <button onclick="change_icon_menu()">(0)</button>
+        <br>
+        <div id="s">
+            
+        </div>
+        <script>
+            function change_icon_menu(){
+                    document.getElementById("s").style.transition = "height 0.8s";
+                    document.getElementById("s").style.transitionDelay = "1s";
+                    document.getElementById("s").style.transitionDuration = "1s";
+                    document.getElementById('s').style.height='300px';
+            }
+        </script>
+    </body>
+</html>

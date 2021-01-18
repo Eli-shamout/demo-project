@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome!</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style-test.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet"> <!--FONT-FAMILE : 'East Sea Dokdo', cursive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500;800&display=swap" rel="stylesheet">
+</head>
+<script src="js/myjs.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<body lang="ar">
+<div class="container-fluid select-part-sticky">
+    <div class="row">
+        <div class="select-part">
+            <script>
+                function change_icon_menu(x){
+                    x=document.getElementById('menu-part').offsetHeight;
+                    if (x===0){
+                        document.getElementById("down_icon").style.transition = "all 0.4s";
+                        document.getElementById("down_icon").style.transitionDelay = "0.4s";
+                        document.getElementById("down_icon").style.transitionDuration = "0.4s";
+                        document.getElementById("down_icon").style.transform+='rotate(180deg)';
+                        document.getElementById("menu-part").style.transition = "height 0.4s";
+                        document.getElementById("menu-part").style.transitionDelay = "0.4s";
+                        document.getElementById("menu-part").style.transitionDuration = "0.4s";
+                        document.getElementById("menu-part").style.height='300px';   
+                    }else{
+                        document.getElementById("down_icon").style.transition = "all 0.4s";
+                        document.getElementById("down_icon").style.transitionDelay = "0.4s";
+                        document.getElementById("down_icon").style.transitionDuration = "0.4s";
+                        document.getElementById("down_icon").style.transform+='rotate(180deg)';
+                        document.getElementById("menu-part").style.transition = "height 0.4s";
+                        document.getElementById("menu-part").style.transitionDelay = "0.4s";
+                        document.getElementById("menu-part").style.transitionDuration = "0.4s";
+                        document.getElementById("menu-part").style.height='0px';
+                    } 
+                }
+            </script>
+            <span class='fas fa-caret-down' id="down_icon" onclick="change_icon_menu(0)"></span>
+        </div>
+    </div>
+    <div class="" id="menu-part">
+        <a href="" class="sel-part" alt="">part 1</a>
+        <a href="" class="sel-part" alt="">part 1</a>
+        <a href="" class="sel-part" alt="">part 1</a>
+        <a href="" class="sel-part" alt="">part 1</a>
+    </div>
+</div>
+</body>
+</html>
